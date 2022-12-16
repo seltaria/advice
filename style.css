@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors: */
+  --color-cyan: hsl(193, 38%, 86%);
+  --color-green: hsl(150, 100%, 66%);
+  --color-grayish-blue: hsl(217, 19%, 38%);
+  --color-dark-grayish-blue: hsl(217, 19%, 24%);
+  --color-dark-blue: hsl(218, 23%, 16%);
+
+  /* Layout: */
+  --mobile: 375px;
+  --desctop: 1140px;
+
+  /* Typography: */
+  --font-size: 28px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Roboto';
+  font-size: var(--font-size);
+  font-weight: 800;
+  color: var(--color-cyan);
+  background-color: var(--color-dark-blue);
+  /* overflow: hidden; */
+}
+
+img {
+  max-width: 100%;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Attribution: */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Main: */
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  min-height: 300px;
+  padding: 50px;
+  padding-bottom: 60px;
+  border-radius: 10px;
+  background-color: var(--color-dark-grayish-blue);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advice {
+  margin-bottom: 20px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: var(--color-green);
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.button {
+  position: absolute;
+  bottom: -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-green);
+  background-image: url(./images/icon-dice.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: box-shadow .2s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: -1px -1px 23px rgba(82,255,168,0.6);
+}
+
+@media (max-width: var(--mobile)) {
+
+  
+
+}
